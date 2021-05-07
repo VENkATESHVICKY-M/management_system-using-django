@@ -1,0 +1,12 @@
+<h3>UPDATE TASK</h3>
+<form  method="POST">
+    {% csrf_token %}
+    <input type="text" name="name" value="{{t.name}}" >
+    <select name="gender">
+        <option value="MALE">MALE</option>
+        <option value="FEMALE">FEMALE</option>
+    </select>
+    <input type="number" name="mark" value="{{t.marks}}" >
+    <input type="submit" value="update">
+
+</form>

@@ -1,0 +1,10 @@
+<form method="POST">
+    {% csrf_token %}
+        <input type="text" name="name" placeholder="NAME"  id="name" ><br>
+        <select name="gender">
+            <option value="MALE">MALE</option>
+            <option value="FEMALE">FEMALE</option>
+        </select><br>
+        <input type="number" name="mark" placeholder="MARKS"  id="name" ><br>
+        <input type="submit" value="submit" id="btn">
+</form>
